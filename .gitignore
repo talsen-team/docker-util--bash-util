@@ -1,5 +1,7 @@
 *
 
 !.gitignore
+!elevate.sh
+!functions.sh
 !LICENCE
 !README.md
