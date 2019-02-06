@@ -86,6 +86,10 @@ function prepare_local_environment() {
 
     export HOST_PATH_TO_DOCKER_COMPOSE_FILE=${VAR_HOST_PATH_TO_DOCKER_COMPOSE_FILE}
 
+    local VAR_HOST_PATH_TO_VOLUMES_ROOT=$( realpath ${VAR_HOST_PATH_TO_CONFIGURATION_DIR}/volumes )
+
+    export HOST_PATH_TO_VOLUMES_ROOT=${VAR_HOST_PATH_TO_VOLUMES_ROOT}
+
     echo -e "Preparing local environment ... $( __done )"
 }
 
